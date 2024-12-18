@@ -13,10 +13,21 @@ describe("POST /sum",()=>{
             answer : -1,
             id : 1
         });
+        //spying on the create fnx
+        vi.spyOn(prisma.sum,"create");
         const req = await request(app).post("/sum").send({
             a : 1,
             b : -2
         });
+        
+        //checking weather the create fnx is called with correct output or not?
+        expect(prisma.sum.create).toHaveBeenCalledWith({
+            data : {
+                a: 1,
+                b : -2,
+                answer : -1
+            }
+        })
         expect(req.body.answer).toBe(-1);
         expect(req.statusCode).toBe(200);
     })
