@@ -1,0 +1,24 @@
+{
+  "name": "5-mocking-using-vitest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@prisma/client": "^6.1.0",
+    "@types/express": "^5.0.0",
+    "@types/supertest": "^6.0.2",
+    "5-mocking-using-vitest": "file:",
+    "express": "^4.21.2",
+    "prisma": "^6.1.0",
+    "supertest": "^7.0.0"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.8"
+  }
+}
