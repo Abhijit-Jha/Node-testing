@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@types/express": "^5.0.0",
     "@types/supertest": "^6.0.2",
     "4-testing-using-vitest": "file:",
     "express": "^4.21.2",
