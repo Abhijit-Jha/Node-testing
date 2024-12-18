@@ -3,7 +3,10 @@ import { prisma } from "./db"
 import { vi } from "vitest";
 export const app = express();
 app.use(express.json());
-//mocking primsa request - we are calling prisma.sum.create 
+//DEEP MOCKING
+vi.mock("./db");
+
+//UGLY WAY - mocking primsa request - we are calling prisma.sum.create 
 // vi.mock("./db", () => {
 //     return {
 //         prisma: {

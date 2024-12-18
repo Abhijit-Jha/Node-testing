@@ -1,4 +1,4 @@
-import { describe,it,expect, vi } from "vitest"; //the only change
+import { describe,it,expect } from "vitest"; //the only change
 import request from "supertest";
 import { app } from ".";
 
