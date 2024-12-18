@@ -1,22 +1,19 @@
 {
-  "name": "2-testing-express-app",
+  "name": "4-testing-using-vitest",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@jest/globals": "^29.7.0",
-    "@types/express": "^5.0.0",
     "@types/supertest": "^6.0.2",
-    "2-testing-express-app": "file:",
     "express": "^4.21.2",
     "supertest": "^7.0.0",
-    "ts-jest": "^29.2.5"
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
   }
 }
